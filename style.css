@@ -1,0 +1,108 @@
+/* ============================ HTML =========================== */
+html{
+	background-image: url('Image/wallpaper.png');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+}
+
+
+
+/* =========================== HEADER =========================== */
+
+header{
+	text-align: center;
+}
+
+
+/* =========================== BODY =========================== */
+
+body{
+	display: grid;
+	grid-template-columns: auto 0px;
+}
+
+/* =========================== INPUTS =========================== */
+
+.input-phrase {
+    padding: 10px;
+    font-size: 17px;
+    float: left;
+    width: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: white;
+
+	border: 1px white;
+	border-radius: 25px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.button-phrase {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    background: #0B5345;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+	text-align: center;
+	
+	border: 1px white;
+    border-radius: 25px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+.button-phrase:hover {
+	background-color: #0069d9;
+}
+
+.input-file {
+    width: 0;
+}
+
+/* =========================== PHRASE =========================== */
+
+.phrase{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-150%);
+	
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 25px;
+    float: center;
+    width: 600px;
+    padding-left: 20px;
+    padding-top: 18px;
+    background: transparent;
+}
+
+/* =========================== POPUP =========================== */
+
+#popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 250px;
+  padding: 20px;
+  background-color: turquoise;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  display: none;
+}
+
+
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}

@@ -1,0 +1,23 @@
+<?php
+    session_start(); // démarrer la session
+    // vérifier si l'utilisateur est connecté
+    if (isset($_SESSION['user'])) {
+        $link_text = "Compte"; // si l'utilisateur est connecté, changer le texte du lien
+        $link_url = "compte.php"; // et rediriger le lien vers la page "compte.php"
+    } else {
+        $link_text = "Se connecter"; // si l'utilisateur n'est pas connecté, afficher le texte d'origine
+        $link_url = "login.php"; // et rediriger le lien vers la page "login.php"
+    }
+?>
+
+<div class="container2">
+	<h2>FAMILINK</h2>
+	<nav>
+	  <ul>
+		<li><a href="index.php">Accueil</a></li>
+		<li><a href="mailto:familink.pravaz@gmail.com">Contact</a></li>
+		<li><a href="membres.php">Membres</a></li>
+        <li><a href="<?php echo $link_url; ?>"><?php echo $link_text; ?></a></li> <!-- afficher le texte du lien en fonction de l'état de connexion de l'utilisateur -->
+	  </ul>
+	</nav>
+</div>

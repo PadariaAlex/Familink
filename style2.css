@@ -1,0 +1,17 @@
+.Image{
+	text-align: center;
+	padding-top: 2.5%;
+	max-height: 100%;
+}
+
+body{
+	background-color: black;
+}
+
+.Texte{
+	font-family: Calibri;
+	text-align: center;
+	font-size: 500%;
+	color: white;
+	background-color: #111111;
+}

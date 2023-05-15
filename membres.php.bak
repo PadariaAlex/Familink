@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" lang="fr-FR" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style_header.css">
+<head>
+    <?php
+		include 'header.php'; // HEADER
+	 ?>	
+	
+	<title>Notre équipe</title>
+	<style type="text/css">
+		body {
+			background-image: url('Image/wallpaper.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: black;
+			font-family: sans-serif;
+			color: #fff;
+			text-align: center;
+		}
+		h1 {
+			font-size: 80px;
+			margin-bottom: 50px;
+		}
+		.member {
+			display: inline-block;
+			width: 28%;
+			margin: 20px;
+			padding: 20px;
+			background-color: rgba(0,0,0,0.5);
+			vertical-align: top;
+			text-align: center;
+		}
+		.member img {
+			max-width: 50%;
+			border-radius: 50%;
+		}
+		.member h2 {
+			margin-top: 20px;
+			font-size: 24px;
+		}
+		.member p {
+			margin-top: 10px;
+			font-size: 18px;
+		}
+	</style>
+			
+</head>
+<body>
+	<h1>Une équipe, une passion.</h1>
+
+	<div class="member">
+		<img src="Image/Alex.png">
+		<h3>Alexandre TEPPAZ</h3>
+		<p>Web Designer</p>
+	</div>
+
+	<div class="member">
+		<img src="Image/Pierrr.png">
+		<h3>Pierre Miquel</h3>
+		<p>Conception Pilulier</p>
+	</div>
+
+	<div class="member">
+		<img src="Image/Nicolas.png">
+		<h3>Nicolas Mazeau</h3>
+		<p>Gestion Eco-Energétique</p>
+	</div>
+	
+</body>
+<footer>
+	<?php
+			include 'footer.php'; // FOOTER
+	?>
+</footer>
+</html>

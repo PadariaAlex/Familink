@@ -1,0 +1,333 @@
+/* style_compte.css */
+
+/* Global styles */
+body {
+	background-image: url('Image/wallpaper.png');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2em;
+    margin-right: auto;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #aaa;
+}
+
+
+/* ------------------------ INTERFACE ------------------------ */
+
+.separator {
+  border-top: 1px solid transparent;
+  margin: 30px auto;
+  width: 90%;
+}
+
+.profil{
+	margin-top: 30px;
+}
+
+.profil,
+.patient {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+}
+
+.ProCol{
+	color: black;
+}
+
+.profil .photo-profil,
+.patient .photo-patient {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #aaa;
+    margin-bottom: 20px;
+}
+
+.profil .infos,
+.patient .infos {
+    text-align: left;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.header h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.header .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.header .user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header .user-info a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Main content */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-section .user-info {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.user-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-section h2 {
+  margin: 0;
+}
+
+.user-section .btn {
+  background-color: #2196F3;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.user-data {
+  margin-top: 50px;
+}
+
+.user-data h2 {
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+.form-section {
+  margin-top: 50px;
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.form-group button {
+  background-color: #2196F3;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #0F78B1;
+}
+
+/* Patient section */
+.patient-section {
+  margin-top: 50px;
+}
+
+.patient-section h2 {
+  margin-bottom: 20px;
+}
+
+.patient-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.patient-data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.patient-data label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.patient-data p {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Se déconnecter */
+/* Bouton "Se déconnecter" */
+.btn-logout {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 30px;
+  background-color: #ff5050;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  transform: translateY(-180%);
+}
+
+.btn-logout:hover {
+  background-color: #e60000;
+}
+
+/* Popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Bouton "Oui" */
+.btn-yes,
+.btn-no {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: gray;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+
+.btn-no {
+	margin-left: 30px;
+}
+
+
+.btn-no:hover {
+  background-color: #d60000;
+}
+
+
+.btn-yes:hover{
+  background-color: #0BA345;
+}
